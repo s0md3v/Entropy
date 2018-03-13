@@ -32,7 +32,7 @@ Here's how we calculate entropy:
 log(score)/log(2)) * len(payload)
 ```
 Where score is the number of special characters in the string.<br>
-Entropy increases with increase in search space.
+Higher the entropy, higher is the probablity of string to be malicious.
 
 ##### Shannon Entropy
 ```
@@ -42,7 +42,7 @@ for number in range(256):
         entropy = entropy - result * log(result, 2)
 ```
 For a better understanding take a look the source code.<br>
-But what shannon entropies does is that considers patterns too.<br>
+But what shannon entropies does is that considers patterns unlike the normal entropy.<br>
 Take a look at these three strings and their shannon entropies:
 ```
 String: s0md3v
@@ -54,14 +54,16 @@ Entropy: 0.918295834054
 String: //////////////
 Entropy: 0.0
 ```
-The first string has no repeating pattern and hence has the highest value of shannon entropy while the second string however has a repeating pattern which lowers it entropy to nearly one. The last string only consists a single character and has no randomness and hence has 0 shannon entropy.
+The first string has no repeating pattern and hence has the highest value of shannon entropy while the second string however has a repeating pattern which lowers it entropy to nearly one. The last string only consists a single character and has no randomness and hence has 0 shannon entropy.<br>
+So again, higher the shannon entropy, higher is the probablity of string to be malicious.
 
 ##### Special Char ratio
 ```
 (len(payload) - score) <= len(payload)/2
 ```
 Where score is again the number of special characters in the string.<br>
-We are just checking if the string's 50% part or more is made of special characters.
+We are just checking if the string's 50% part or more is made of special characters.<br>
+Higher is the special char ration, higher is the probablity of string to be malicious.
 
 ##### Levenshtein Distance
 Most of the WAFs check if the input matches a regex or payload in their signature database. But instead of looking for same payloads in signature database, <b>Entropy</b> looks for *similar* payloads using Levenshtein Distance algorithm.

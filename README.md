@@ -27,6 +27,7 @@ Does it make sense now?<br>
 Let me introduce you to all the algorithms used now
 
 ##### Entropy
+Here's how we calculate entropy:
 ```
 log(score)/log(2)) * len(payload)
 ```

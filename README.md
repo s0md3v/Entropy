@@ -1,6 +1,7 @@
 <img src='https://i.imgur.com/IwgWrHA.png' />
 
-Its just a prototype of a WAF core which makes of mathematical algorithms to determine if the input is malicious.
+Its just a prototype of a WAF core which makes of mathematical algorithms to determine if the input is malicious.<br>
+Play with it by entering payloads (prefer XSS for now) and let me know about your experience.
 
 #### Detection Methods
 - Entropy
